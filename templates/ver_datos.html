@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Ver empleados</h1>
+    <ul>
+        {% for empleado in empleados %}
+            <li>{{ empleado.nombre }}</li>
+        {% endfor %}
+    </ul>
+
+    <h1>Ver tiendas</h1>
+    <ul>
+        {% for tienda in tiendas %}
+            <li>{{ tienda.nombre }}</li>
+        {% endfor %}
+    </ul>
+
+    <h1>Ver productos</h1>
+    <ul>
+        {% for producto in productos %}
+            <li>{{ producto.nombre }}</li>
+        {% endfor %}
+    </ul>
+
+    <h1>Ver clientes</h1>
+    <ul>
+        {% for cliente in clientes %}
+            <li>{{ cliente.nombre }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Registrar empleados</h1>
+    {{ mensaje }}
+    <form action="{% url 'crear_empleado' %}" method="POST">
+        {% csrf_token %}
+        {{ empleado_formulario.as_p }}
+        <button type="submit">Crear</button>
+    </form>
+</body>
+</html>
